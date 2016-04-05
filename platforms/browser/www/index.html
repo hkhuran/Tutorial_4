@@ -40,22 +40,42 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<style type="text/css">
+body {
+    background: url(img/credit.jpg);
+    background-repeat:repeat-y;
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:100% 100%;
+}
+.ui-page {
+    background: transparent;
+}
+.ui-content{
+    background: transparent;
+}
+</style>
     <title>Tutorial4</title>
 </head>
 
 <body>
-    <div data-role="page">
-	<div data-role="header">
+	<div data-role="header" data-theme="b">
 		<h1>Tutorial 4</h1>
+		 <div data-role="navbar">
+			<ul>
+			<li><a href="#" data-icon="home" data-theme="a">Home</a></li>
+			<li><a href="#" data-icon="search" data-theme="a">Search</a></li>
+			</ul>
+		</div> 
 	</div><!-- /header -->
 
 	<div data-role="content" align="center">
-		<h3><p>Please enter your credit card number below</p></h3>
+		<h3><p>Enter your credit card number below</p></h3>
 		<form id="credit-card-entry-form" method="POST">
 		<div class="ui-field-contain">
         <input type="text" name="credit-card-number" placeholder="Credit card number format - 1234123412341234" required/>
       </div>
-      <input type="submit" data-inline="true" value="Submit" align="center">
+      <input type="submit" data-inline="true" value="validate" align="center">
     </form>
 	<div id="type"></div>
 	</div><!-- /content -->
