@@ -26,8 +26,8 @@ var luhnChk = (function(arr) {
 
 function is_luhn_valid(cardNumber) {
   if (luhnChk(cardNumber) === true){
-	$('#type').html('<h1><b><font color="green">Valid Credit Card</font></b></h1>');
+	$('#type').html('<h1><b><font color="green">Valid Credit Card Number</font></b></h1>');
   } else { 
-  $('#type').html('<h1><b><font color="red">Invalid Credit Card</font></b></h1>');
+  $('#type').html('<h1><b><font color="red">Invalid Credit Card Number</font></b></h1>');
   }
 }
